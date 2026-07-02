@@ -13,9 +13,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import (
     RandomForestRegressor,
-    HistGradientBoostingRegressor
+    GradientBoostingRegressor
 )
-
 from sklearn.metrics import (
     mean_absolute_error,
     mean_squared_error,
@@ -114,10 +113,10 @@ models = {
             random_state=42
         ),
 
-    "Hist Gradient Boosting":
-        HistGradientBoostingRegressor(
-            random_state=42
-        )
+    "Gradient Boosting":
+    GradientBoostingRegressor(
+        random_state=42
+    )
 
 }
 
